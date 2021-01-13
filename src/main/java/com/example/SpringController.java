@@ -10,7 +10,7 @@ public class SpringController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Enter a number 1-10 in the url bar to see one of my author recommendations.\nEx: http://localhost:8080/{number}";
+		return "Enter a number 1-10 in the url bar to see one of my author recommendations. Ex: http://localhost:8080/{number}";
 	}
 
 	@GetMapping("/{id}")
@@ -37,6 +37,6 @@ public class SpringController {
 		case "10":
 			return "Vince Flynn";
 		}
-		return "Entera number 1-10";
+		return "Enter a number 1-10";
 	}
 }
